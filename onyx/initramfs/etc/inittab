@@ -1,0 +1,11 @@
+
+#tty0::once:/test/close_term
+::sysinit:/etc/init.d/rcS
+#::once:/test/close_printk
+#tty1::once:/bin/sh
+#::once:/etc/init.d/start 
+::askfirst:-/bin/sh
+::restart::/sbin/init
+
+::shutdown:/bin/umount -a -r
+::shutdown:/sbin/swapoff -a
